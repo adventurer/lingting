@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ckplayer只调用html5播放器</title>
+</head>
+<body>
+<div id="a1"></div>
+<script type="text/javascript" src="/ckplayer6.8/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		p:0,
+		e:1,
+		i:''
+	};
+	var video=['/geturl.php?url=http://v.youku.com/v_show/id_XMTc2ODA1NjUwOA\=\=.html\?spm\=a2hww.20023042.ykRecommend.5\~5\!3\~5\~5\~Als'+'->ajax/get/utf-8'];
+	var support=['all'];
+	CKobject.embedHTML5('a1','ckplayer_a1',600,400,video,flashvars,support);
+</script>
+</body>
+</html>
